@@ -90,8 +90,7 @@ fun UnSplashItem(item: UnSplashImage, onClick: (String) -> Unit) {
                     .height(40.dp)
                     .fillMaxWidth()
                     .padding(horizontal = 8.dp),
-                verticalAlignment = Alignment.CenterVertically,
-
+                verticalAlignment = Alignment.CenterVertically
                 ) {
                 Text(
                     text = buildAnnotatedString {

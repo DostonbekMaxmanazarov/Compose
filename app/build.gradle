@@ -138,9 +138,4 @@ dependencies {
      * SystemBar change color and background
      * */
     implementation "com.google.accompanist:accompanist-systemuicontroller:0.27.0"
-
-    /**
-     * Blur
-     * */
-    implementation "com.github.skydoves:cloudy:0.1.1"
 }
