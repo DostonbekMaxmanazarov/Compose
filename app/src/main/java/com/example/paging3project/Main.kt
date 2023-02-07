@@ -1,6 +1,12 @@
 package com.example.paging3project
 
 fun main() {
-    val list = arrayListOf(1, 3, 4, 6, 3, 6, 7, 4)
-    println(list.first())
+    val colors = listOf(ColorVal(1), ColorVal(5), ColorVal(9), ColorVal(10))
+    val colorValue = colors.map { it.value }
+
+    colorValue.forEach{
+        println(it)
+    }
 }
+
+class ColorVal(val value: Int)

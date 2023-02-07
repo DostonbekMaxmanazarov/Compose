@@ -1,4 +1,4 @@
-package com.example.paging3project.presentation.screen.image
+package com.example.paging3project.presentation.screen.detail
 
 import androidx.compose.foundation.*
 import androidx.compose.foundation.layout.Box
