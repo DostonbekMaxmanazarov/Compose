@@ -10,13 +10,18 @@ import androidx.navigation.navArgument
 import coil.annotation.ExperimentalCoilApi
 import com.example.paging3project.presentation.screen.home.HomeScreen
 import com.example.paging3project.presentation.screen.detail.ImageScreen
+import com.example.paging3project.presentation.screen.splash.SplashScreen
 import com.example.paging3project.util.Constants.NAV_ARGUMENTS_IMAGE_URL
 
 @ExperimentalCoilApi
 @ExperimentalFoundationApi
 @Composable
 fun SetUpNavGraph(navController: NavHostController) {
-    NavHost(navController = navController, startDestination = Screen.Home.root) {
+    NavHost(navController = navController, startDestination = Screen.Splash.root) {
+        composable(route = Screen.Splash.root) {
+            SplashScreen(navController = navController)
+        }
+
         composable(route = Screen.Home.root) {
             HomeScreen(navController = navController)
         }
